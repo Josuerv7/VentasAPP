@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VentasAPP.Configuracion">
+
+
+    <ScrollView>
+        <VerticalStackLayout Margin="30,30,30,5">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image x:Name="imagen" HeightRequest="80"/>
+            </StackLayout>
+            <!-- Imagen que se actualizará según la URL ingresada -->
+            <Label></Label>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <!-- Input para la URL de la imagen -->
+                <Label Text="Logo de la Tienda" FontSize="Medium" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Entry x:Name="imageURLEntry" Placeholder="URL de la imagen" />
+            </StackLayout>
+            <!-- Botón para cargar la imagen -->
+            <Label></Label>
+            <Button Text="Cargar Imagen" Clicked="CargarImagen_Clicked" />
+            <Label></Label>
+            <Label></Label>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Nombre de la Tienda" FontSize="Medium" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Entry x:Name="storeNameEntry" Placeholder="Nombre de la Tienda" />
+            </StackLayout>
+            <Label></Label>
+            <Button Text="Cambiar Nombre" Clicked="CargarNombre_Clicked" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label x:Name="hechoLabel" Text="" VerticalOptions="Center"/>
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

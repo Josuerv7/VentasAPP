@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VentasAPP.Clientes"
+             Title="Clientes">
+    <VerticalStackLayout>
+        <Label 
+            TextColor="Black"
+            Text="Bienvenido a Clientes"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+        <Label 
+            TextColor="Black"
+     Text="¿Que deseas hacer?"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Text="Registrar nuevo cliente" Clicked="OnButton1Clicked" />
+            <Button Grid.Row="1" Text="Ver Clientes" Clicked="OnButton2Clicked" />
+        </Grid>
+        
+    </VerticalStackLayout>
+</ContentPage>

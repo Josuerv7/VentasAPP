@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VentasAPP.MainPage"
+             Title="Tu app de ventas">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="30,30,30,5">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Image x:Name="imagen" HeightRequest="120"/>
+            </StackLayout>
+
+            <Label Text="Usuario" FontSize="Medium" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Stroke="black" StrokeThickness="1" StrokeShape="RoundRectangle 15">
+                    <Entry x:Name="usuario" FontSize="Medium" />
+                </Border>
+                <Button Grid.Column="1" Text="X" Clicked="BorrarUsuario_Clicked" BackgroundColor="LightGrey" TextColor="Red" />
+            </Grid>
+
+            <Label Text="Contraseña" FontSize="Medium" Margin="0,15,0,0"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Stroke="black" StrokeThickness="1" StrokeShape="RoundRectangle 15">
+                    <Entry x:Name="contrasena" FontSize="Medium" IsPassword="True" />
+                </Border>
+                <Button Grid.Column="1" x:Name="mostrarContrasena" Text="Mostrar" Clicked="MostrarContrasena_Clicked" BackgroundColor="LightGrey" TextColor="Black" />
+            </Grid>
+
+            <Button Text="Entrar" FontSize="Medium" BackgroundColor="CornflowerBlue" TextColor="White" Clicked="Button_Clicked" Margin="0,15,0,0"/>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Label Text="Recordar el usuario" VerticalOptions="Center"/>
+                <Switch x:Name="recordar" VerticalOptions="Center"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

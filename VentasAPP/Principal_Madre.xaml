@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             x:Class="VentasAPP.Principal_Madre"              Title="Tu tienda">
+
+    <StackLayout Padding="15">
+
+        <Label Text="{Binding nombre, StringFormat='Selecciona una opcion {0}'}" />
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Text="Clientes" Clicked="OnButton1Clicked" />
+            <Button Grid.Row="1" Text="Productos" Clicked="OnButton2Clicked" />
+            <Button Grid.Row="2" Text="Configuracion" Clicked="OnButton3Clicked" />
+        </Grid>
+
+    </StackLayout>
+    
+
+</ContentPage>

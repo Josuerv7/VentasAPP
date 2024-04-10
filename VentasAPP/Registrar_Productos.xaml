@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             x:Class="VentasAPP.Registrar_Productos"
+
+             Title="Registrar Productos">
+
+    <ScrollView>
+
+        <StackLayout Padding="5">
+
+            <Frame BackgroundColor="SeaGreen" Padding="24" CornerRadius="0">
+
+                <Label Text="Capturar Producto" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+
+            </Frame>
+
+            <Label Text="Nombre del producto" FontSize="Medium"/>
+
+            <Entry x:Name="nombre" FontSize="Medium"/>
+
+            <Label Text="Descripcion" FontSize="Medium"/>
+
+            <Entry x:Name="descripcion" FontSize="Medium"/>
+
+            <Label Text="Cantidad" FontSize="Medium"/>
+
+            <Entry x:Name="cantidad" FontSize="Medium"/>
+
+            <Label Text="Precio costo" FontSize="Medium"/>
+
+            <Entry x:Name="precio_cost" FontSize="Medium"/>
+
+            <Label Text="Precio Venta" FontSize="Medium"/>
+
+            <Entry x:Name="precio_vent" FontSize="Medium"/>
+
+            <Label Text="URL imagen del producto" FontSize="Medium"/>
+
+            <Entry x:Name="imagen" FontSize="Medium"/>
+
+            <Button Text="Guardar" CornerRadius="4" BackgroundColor="CornflowerBlue"
+
+TextColor="White" Clicked="Button_Clicked"/>
+
+            <Label Text="" x:Name="resultado" FontSize="Medium" FontAttributes="Bold"/>
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

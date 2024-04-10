@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             x:Class="VentasAPP.Registrar_Clientes"
+
+             Title="Registrar Clientes">
+
+    <ScrollView>
+
+        <StackLayout Padding="5">
+
+            <Frame BackgroundColor="SeaGreen" Padding="24" CornerRadius="0">
+
+                <Label Text="Capturar Usuario" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+
+            </Frame>
+
+            <Label Text="Nombre completo" FontSize="Medium"/>
+
+            <Entry x:Name="nombre" FontSize="Medium"/>
+
+            <Label Text="Direccion" FontSize="Medium"/>
+
+            <Entry x:Name="direccion" FontSize="Medium"/>
+
+            <Label Text="Telefono" FontSize="Medium"/>
+
+            <Entry x:Name="telefono" FontSize="Medium"/>
+
+            <Label Text="Correo Electronico" FontSize="Medium"/>
+
+            <Entry x:Name="correo" FontSize="Medium"/>
+
+            <Label Text="URl foto del cliente" FontSize="Medium"/>
+
+            <Entry x:Name="foto" FontSize="Medium"/>
+
+            <Button Text="Guardar" CornerRadius="4" BackgroundColor="CornflowerBlue"
+
+        TextColor="White" Clicked="Button_Clicked"/>
+
+            <Label Text="" x:Name="resultado" FontSize="Medium" FontAttributes="Bold"/>
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>
